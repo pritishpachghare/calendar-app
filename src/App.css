@@ -1,6 +1,11 @@
-
+.body{
+  margin: auto;
+  background: #3174ad;
+}
 .App {
   text-align: center;
+  background: #3174ad;
+  height: 1000;
 }
 
 .input{
@@ -13,9 +18,8 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
+  flex-direction: column;
   margin-top: 20px;
-  display: flex;
-  flex-direction: row;
 }
 @media screen and (min-width: 600px) {
   .input {
@@ -24,10 +28,7 @@
 
   }
   .calendar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+
   }
 
 }

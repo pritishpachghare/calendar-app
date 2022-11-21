@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import format from 'date-fns/format';
@@ -12,7 +11,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import React, { useState } from 'react'
 
 function App() {
-
   const locales = {
     'en-US': enUS,
   }
@@ -114,10 +112,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{ color:'black' }}>Calendar</h1>
+      <h1 style={{ color:'white' }}>Calendar</h1>
       <div style={{ display: 'flex', justifyContent: "center"}}>
         <div className='input'>
-
           <input
             type="text"
             placeholder='Add Title'
@@ -144,20 +141,18 @@ function App() {
             <button onClick={handleAddEvent} >Save</button></div>
         </div>
       </div>
-      <div  style={{display:'flex',justifyContent:"center"}}>
-      <div
-      className='calendar'>
+     
         <Calendar
           defaultDate={'02-01-2019'}
           localizer={localizer}
           events={allEvent}
           startAccessor="start"
           endAccessor="end"
-          style={{height:500,width:1000,padding:'10px'}}
+          style={{height:500,padding:'10px', background:'white'}}
+          className="calendar"
         />
+      
       </div>
-      </div>
-    </div>
   );
 }
 
