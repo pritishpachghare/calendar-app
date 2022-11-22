@@ -109,6 +109,11 @@ function App() {
     setAllEvent([...allEvent, newEvent])
   }
 
+//   const [dates,setDates] = useState()
+//   console.log()
+//   function onClickDate(e) {
+//     setDates(e.date);
+// };
 
   return (
     <div className="App">
